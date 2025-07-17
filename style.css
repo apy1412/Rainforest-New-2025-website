@@ -1,0 +1,314 @@
+*, 
+*::after, 
+*::before{
+    box-sizing: border-box;
+    // border:1px solid red;
+}
+/* Regular weight */
+@font-face {
+    font-family: "MyFont-chunkfive";
+    src: url("fonts/chunkfive-regular-webfont.woff2") format("woff2"),
+         url("fonts/chunkfive-regular-webfont.woff")  format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;      /* prevents invisible text flash */
+  }
+  
+  
+  @font-face {
+    font-family: "MyFont-new-montserrat";
+    src: url("fonts/neuemontreal-regular-webfont.woff2") format("woff2"),
+         url("fonts/neuemontreal-regular-webfont.woff")  format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Bold weight */
+  @font-face {
+    font-family: "MyFont-new-montserrat-bold";
+    src: url("fonts/neuemontreal-bold-webfont.woff2") format("woff2"),
+         url("fonts/neuemontreal-bold-webfont.woff")  format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
+:root{
+    --bg-color: #F2F2F2;
+    --font-heading:"MyFont-chunkfive", sans-serif;
+    --font-text:"MyFont-new-montserrat", sans-serif;
+    --font-text-bold:"MyFont-new-montserrat-bold", sans-serif;
+    --font-color-mobile: #0F4D5C;
+    --btn-bg-hover:#E71D36;
+    --btn-bg:#FFD803;
+    --background: linear-gradient(to right,#01EDE3, #FBE765);
+    --font-body-color:#4A4747;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+  }
+
+/* navigation section*............................. */
+
+.main{
+    height:100vh;
+}
+
+.logo{
+    width:124px;
+}
+.menu{
+    width: 30px;
+}
+
+.header-navigation-links{
+     display: none;
+    }
+.hero-color-section{
+    background: var(--background);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2.5rem 0;
+    
+}
+
+
+/* hero section */
+
+.hero-image{
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: cover;
+}
+
+.arrow-icon{
+    width: 24px;
+}
+
+.hero-text-section{
+    background-color: #ffffff;
+}
+
+h1{
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: .88;
+    color: var(--font-body-color);
+    text-align: center;
+    padding: 2.5rem;
+    margin: 0;
+}
+   
+
+.red{
+    color:var(--btn-bg-hover);
+}
+
+.hero-text-first, .hero-text-second{
+    font-family: var(--font-text);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color:var(--font-body-color);
+    text-align: center;
+    padding: 0 2.5rem;
+    margin: 0;
+}
+
+.hero-text-second{
+    font-family: var(--font-text-bold);
+    padding-top: 4rem;
+}
+
+
+.hero-section-button{
+    font-size: 2rem;
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--font-body-color);
+    background:var(--btn-bg);
+    display:flex;
+    justify-content: space-between;
+    width:20rem;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+  
+
+}
+
+
+/* media query for 575px */
+
+@media screen and (min-width: 575px) {
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 5rem 0;
+        
+    }
+    h1{ 
+        font-size: 4rem;
+        text-align: left;
+        padding: 2rem 5rem;
+    }
+
+    .hero-text-first, .hero-text-second{
+        text-align: left;
+        padding: 0 5rem;
+    }
+    
+    .hero-text-second{
+        padding-top: 4rem;
+    }
+    .hero-section-first-text{ 
+        text-align: left;
+        padding: 0rem 5rem;
+    }
+    .hero-section-button{
+        margin: 2rem 5rem ;
+    }
+}
+/* media query for 753px ......................*/
+
+@media screen and (min-width: 753px) {
+
+.header-navigation-links{
+    display: block;
+}
+
+.menu{
+    display:none;
+}
+
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:2rem;
+        // padding: 2rem;
+        list-style: none;
+    }
+
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: var(--font-body-color);
+        text-transform: uppercase;
+        font-family: var(--font-text);
+        
+    }
+
+    .nav-links li a:hover{
+        color:var(--btn-bg-hover)
+    }
+
+    h1{ 
+        font-size: 4.5rem;
+        max-width: 85%;
+    }
+    .hero-text-first{
+        max-width: 85%;
+    }
+    
+    .hero-text-second{
+        padding-top: 4rem;
+    }
+}
+    /* media query for 753px ......................*/
+
+    @media screen and (min-width: 1020px) {
+
+
+.navigation{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+            .hero-text-section{
+                background-color:transparent;
+            }
+
+            .nav-links{
+                gap:5rem;
+                list-style: none;
+            }
+
+
+            h1{ 
+                max-width: 100%;
+                padding-right: 2rem;
+            }
+            .hero-text-first{
+                max-width: 100%;
+                padding-right: 2rem;;
+            }
+
+            .hero-content {
+                display: flex;
+                align-items: stretch;
+                min-height: 93vh; 
+                width:100%;
+                max-width:1400px;
+                margin:0 auto;
+                overflow:visible;
+            }
+            
+            .hero-section,
+            .hero-text-section {
+                flex: 1 1 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .hero-section{
+                order:2;
+           
+            }
+
+            .hero-text-section{
+                order:1;
+            }
+            
+            .hero-img-section {
+                width: 100%;
+                height: 100%;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                
+                
+            }
+            
+            .hero-image {
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+                display: block;
+            }
+
+          
+
+
+
+        
+
+        }   
