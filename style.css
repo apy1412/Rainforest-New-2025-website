@@ -4,6 +4,8 @@
     box-sizing: border-box;
     // border:1px solid red;
 }
+
+
 /* Regular weight */
 @font-face {
     font-family: "MyFont-chunkfive";
@@ -55,6 +57,13 @@ body{
 
   }
 
+  h1,h2,h3,h4,h5{
+    font-family: var(--font-heading);
+    color:var(--font-body-color);
+    margin:0;
+    text-transform: uppercase;
+  }
+
 /* navigation section*............................. */
 
 .main{
@@ -86,7 +95,7 @@ body{
 
 /* hero section */
 
-.hero-image{
+img{
     width: 100%;
     height:100%;
     display: block;
@@ -135,7 +144,7 @@ h1{
 }
 
 
-.hero-section-button{
+.btn{
     font-size: 2rem;
     font-family: var(--font-text);
     text-transform: uppercase;
@@ -160,6 +169,58 @@ h1{
 .hero-section-button:hover .arrow-icon{
     transform:rotate(45deg);
 }
+
+/* workflow section */
+.workflow{
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-bottom: 2rem;
+}
+.wf-container{
+    // background:var(--background);
+    background-color: #F2F2F2;
+    padding: 3rem;
+}
+.wf-heading2{
+    font-size: 3rem;
+}
+
+.wf-heading3{
+    font-size: 1.5rem;
+    font-family: var(--font-text-bold);
+    color:var(--btn-bg-hover);
+    padding-bottom: 3rem;
+}
+.wf-text{
+   margin-top:3rem;
+    font-size: 1.8rem;
+    font-family: var(--font-text);
+}
+.card{
+    width:200px;
+    margin:2rem auto;
+    background-color: #ffffff;
+    padding: 1rem 3rem;
+    border-radius: 16px;
+    box-shadow:0px 0px 10px #c4c2c2;
+}
+.wf-process{
+    background-color: #F2F2F2;
+}
+
+.card img{
+    width:150px;
+    margin:2rem auto 1rem;
+}
+.card-text{
+    font-family: var(--font-text);
+}
+
+.wf-section-button{
+    margin-bottom: 3rem;
+}
+
+
 
 
 /* media query for 575px */
