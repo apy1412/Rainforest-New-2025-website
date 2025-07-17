@@ -225,7 +225,8 @@ h1{
     }
 
     .nav-links li a:hover{
-        color:var(--btn-bg-hover)
+        color:var(--btn-bg-hover);
+        text-decoration: underline;
     }
 
     h1{ 
