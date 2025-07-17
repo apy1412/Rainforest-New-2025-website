@@ -79,7 +79,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 2.5rem 0;
+    padding: 3rem 3rem 0;
     
 }
 
@@ -95,6 +95,7 @@ body{
 
 .arrow-icon{
     width: 24px;
+    transition: all 500ms ease;
 }
 
 .hero-text-section{
@@ -108,7 +109,7 @@ h1{
     line-height: .88;
     color: var(--font-body-color);
     text-align: center;
-    padding: 2.5rem;
+    padding: 3rem;
     margin: 0;
 }
    
@@ -124,7 +125,7 @@ h1{
     line-height: 1.1;
     color:var(--font-body-color);
     text-align: center;
-    padding: 0 2.5rem;
+    padding: 0 3rem;
     margin: 0;
 }
 
@@ -146,9 +147,18 @@ h1{
     width:20rem;
     padding: 1rem 2rem;
     margin: 2rem auto;
-    border-radius: 10px;
+    border-radius: 2px;
+    transition: all 500ms ease;
   
 
+}
+
+.hero-section-button:hover{
+    color:var(--bg-color);
+    background-color: var(--btn-bg-hover);
+}
+.hero-section-button:hover .arrow-icon{
+    transform:rotate(45deg);
 }
 
 
@@ -305,7 +315,7 @@ h1{
             .hero-image {
                 width: 200%;
                 height: 100%;
-                object-fit:cover;
+                object-fit:contain;
                 object-position: center bottom;
                 display: block;
             }
