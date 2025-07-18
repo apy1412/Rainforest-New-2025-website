@@ -322,7 +322,8 @@ h5{
    }
 
  /* reach  section ....................*/  
-.reach{
+
+ .reach{
     text-align: center;
     background:var(--background);
     padding: 3rem 0;
@@ -330,6 +331,78 @@ h5{
  .reach-bold{
     font-size: 5rem;
  }
+
+
+  /* footer  section ....................*/
+footer{
+    display:flex;
+    flex-direction: column;
+}
+
+
+  .address-logo{
+    padding: 3rem;
+ }
+
+ .logo-footer{
+    margin-bottom:2rem;
+ }
+
+ address{
+    font-family: var(--font-text);
+    font-size: 1.2rem; 
+    line-height: 1.7; 
+ }
+
+ address a{
+    // text-decoration: none;
+    // background:#FFD803;
+    color: var(--font-body-color);
+    cursor: pointer;
+ }
+
+ .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+    list-style: none;
+    padding-left: 3rem;
+    justify-content: left;
+    align-items: start;
+    
+}
+    
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--font-body-color);
+    text-transform: uppercase;
+    font-family: var(--font-text);
+    
+            
+}
+    
+.nav-links li a:hover{
+    color:var(--btn-bg-hover);
+    text-decoration: underline;
+}
+
+.img-footer{
+    margin: 0;
+    max-width:100%;
+}
+
+.space{
+    height:3rem;
+    background: var(--background);
+}
+
+.space{
+    text-align: center;
+    padding-top: 5px;
+}
 
 // /* media query for 575px */
 
