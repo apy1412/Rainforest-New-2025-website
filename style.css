@@ -197,7 +197,7 @@ h1{
     font-family: var(--font-text);
 }
 .card{
-    width:220px;
+    max-width:300px;
     margin:2rem auto;
     background-color: #ffffff;
     padding: 2rem 4rem;
@@ -287,6 +287,39 @@ h5{
     font-size: 1.8rem;
 }
 
+/* services  section ....................*/
+.services-links{
+    // padding-bottom: 3rem;
+}
+    .services{
+        background: var(--bg-color);
+        text-align: center;
+        padding: 3rem 0 0 0
+    }
+    .services-bg{
+        padding: 3rem;
+    }
+    .service-text{
+
+        font-size: 1.8rem;
+        font-family: var(--font-text);
+  
+    }
+
+   .btn-services{
+    max-width:100%;
+    width:100%;
+    margin: 0;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid rgba(213, 211, 211);
+   } 
+   .btn-td{
+    border: none;
+   }
+
+   .btn-services{
+    background: #fff;
+   }
 
 
 // /* media query for 575px */
