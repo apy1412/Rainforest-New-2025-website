@@ -258,16 +258,24 @@ h4{
     padding:3rem;
     background: var(--background);
 }
+.rb,.til{
+    filter:invert(1);
+
+}
 
 .ea, .gllit, .rb, .tb, .gat,.sk,.til{
     max-width:180px;
-    border-bottom: 1px solid grey;
+
     padding-bottom: 10px;
+    height:50px;
+    border-bottom: 1px solid rgba(213, 211, 211);
 }
-.rb,.til{
-        filter:invert(1);
-        border-bottom: 1px solid grey;
+
+.til{
+    height:75px;
 }
+
+
 
 .til{
     border-bottom: none;
