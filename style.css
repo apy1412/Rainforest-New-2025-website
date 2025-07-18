@@ -57,7 +57,7 @@ body{
 
   }
 
-  h1,h2,h3,h4,h5{
+  h1,h2,h3,h4,h5,h6{
     font-family: var(--font-heading);
     color:var(--font-body-color);
     margin:0;
@@ -321,6 +321,15 @@ h5{
     background: #fff;
    }
 
+ /* reach  section ....................*/  
+.reach{
+    text-align: center;
+    background:var(--background);
+    padding: 3rem 0;
+}
+ .reach-bold{
+    font-size: 5rem;
+ }
 
 // /* media query for 575px */
 
