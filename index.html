@@ -23,7 +23,7 @@
             </a>
             <img src="img/Icons/menu.png" alt="" class="menu" />
             <div class="header-navigation-links">
-              <ul class="nav-links">
+              <ul class="nav-links links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
@@ -69,16 +69,18 @@
       <div class="wf-container">
         <h2 class="wf-heading2 heading2">our work flow</h2>
         <h3 class="wf-heading3 heading3">Research to activation</h3>
-        <img src="img/workflow-image.svg" alt="" class="wf-image" />
-        <p class="wf-text">
-          We start by deeply understanding the brand, its objectives, audience,
-          and the overall media landscape. This insight shapes a focused
-          strategy and creative direction tailored to the market. With a clear
-          plan in place, we design an effective media approach, selecting the
-          right channels and formats to maximize impact. Once live, we
-          continuously monitor performance, refine our tactics, and optimize the
-          campaign to ensure lasting results.
-        </p>
+        <div class="wf-hero">
+          <img src="img/workflow-image.svg" alt="" class="wf-image" />
+          <p class="wf-text">
+            We start by deeply understanding the brand, its objectives,
+            audience, and the overall media landscape. This insight shapes a
+            focused strategy and creative direction tailored to the market. With
+            a clear plan in place, we design an effective media approach,
+            selecting the right channels and formats to maximize impact. Once
+            live, we continuously monitor performance, refine our tactics, and
+            optimize the campaign to ensure lasting results.
+          </p>
+        </div>
       </div>
       <div class="wf-process">
         <div class="card research">
@@ -138,23 +140,27 @@
         <h3 class="au-heading3 heading3">
           Rooted in Strategy. Grown Through Experience.
         </h3>
-        <img
-          src="img/aboutus.png"
-          alt="office environment picture"
-          class="img img-about"
-        />
-        <p class="text au-text">
-          Though we're a young agency, our roots in the media industry run deep
-          — with over 50 years of collective experience across our leadership
-          team. We've worked with some of the most recognised brands, delivering
-          impactful campaigns that resonate.
-        </p>
-        <p class="text au-text">
-          Our mission is to redefine the dynamics of brand and agency.
-          Established with a vision to bridge the gap between traditional and
-          digital realms, we take pride in being your trusted partner for
-          integrated marketing solutions.
-        </p>
+        <div class="au-container">
+          <img
+            src="img/aboutus.png"
+            alt="office environment picture"
+            class="img img-about"
+          />
+          <div class="au-text-container">
+            <p class="text au-text">
+              Though we're a young agency, our roots in the media industry run
+              deep — with over 50 years of collective experience across our
+              leadership team. We've worked with some of the most recognised
+              brands, delivering impactful campaigns that resonate.
+            </p>
+            <p class="text au-text">
+              Our mission is to redefine the dynamics of brand and agency.
+              Established with a vision to bridge the gap between traditional
+              and digital realms, we take pride in being your trusted partner
+              for integrated marketing solutions.
+            </p>
+          </div>
+        </div>
       </div>
       <h5>Some of our Clients</h5>
       <div class="client-logo">
@@ -226,52 +232,57 @@
     </section>
     <article class="reach">
       <h6 class="reach-bold">Let's Elevate Your Brand Together</h6>
-      <a href="mailto:manoj@rainforestme.com" class="btn hero-section-button">
+      <a
+        href="mailto:manoj@rainforestme.com"
+        class="btn hero-section-button btn-reach"
+      >
         Contact Us
         <img src="img/Icons/arrow.svg" alt="arrow" class="arrow-icon" />
       </a>
     </article>
     <footer>
-      <div class="address-logo">
-        <a href="index.html">
-          <img
-            src="img/Icons/rflogogrey.svg"
-            alt="Rainforest Home"
-            class="logo logo-footer"
-          />
-        </a>
-        <address>
-          <strong>Address:</strong><br />
-          PO Box 236723, Dubai, UAE<br />
-          5th Floor, Al Naboodah Block E,<br />
-          Al Shoala Building, Dubai<br />
-          United Arab Emirates<br />
-          <strong>Tel:</strong>
-          <a href="tel:+971502222222" class="call">+971 50 222 2222</a><br />
-          <strong>Email:</strong>
-          <a href="mailto:manoj@rainforestme.com" class="mail"
-            >manoj@rainforestme.com</a
-          >
-        </address>
-      </div>
-      <div class="footer-navigation-links">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footerImage">
+      <a href="index.html">
         <img
-          src="img/footer-image.png"
-          alt="goal reaching illustration"
-          class="img img-footer"
+          src="img/Icons/rflogogrey.svg"
+          alt="Rainforest Home"
+          class="logo logo-footer"
         />
-        <div class="space">
-          <p>© 2025 Rainforest. All rights reserved.</p>
+      </a>
+      <div class="footer">
+        <div class="address-logo">
+          <address>
+            <strong>Address:</strong><br />
+            PO Box 236723, Dubai, UAE<br />
+            5th Floor, Al Naboodah Block E,<br />
+            Al Shoala Building, Dubai<br />
+            United Arab Emirates<br />
+            <strong>Tel:</strong>
+            <a href="tel:+971502222222" class="call">+971 50 222 2222</a><br />
+            <strong>Email:</strong>
+            <a href="mailto:manoj@rainforestme.com" class="mail"
+              >manoj@rainforestme.com</a
+            >
+          </address>
         </div>
+        <div class="footer-navigation-links">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footerImage">
+          <img
+            src="img/footer-image.png"
+            alt="goal reaching illustration"
+            class="img img-footer"
+          />
+        </div>
+      </div>
+      <div class="space">
+        <p>© 2025 Rainforest. All rights reserved.</p>
       </div>
     </footer>
   </body>
